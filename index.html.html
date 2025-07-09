@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول - جامعة الكوفة</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .login-box img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .login-box label {
+      display: block;
+      text-align: right;
+      margin-top: 10px;
+    }
+    .login-box .remember {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <img src="1752096493030.jpg">
+    <form id="loginForm">
+      <label for="username">اسم المستخدم</label>
+      <input type="text" id="username" name="username" />
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" name="password" />
+      <div class="remember">
+        <label for="remember">تذكر الدخول؟</label>
+        <input type="checkbox" id="remember" name="remember" />
+      </div>
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+  </div>
+
+  <script>
+    // نحجز الفورم
+    const form = document.getElementById('loginForm');
+
+    // نضيف حدث عند الإرسال
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // يمنع إعادة تحميل الصفحة
+      alert('   مؤمل: روح روح ما كو نتائج كل عقلك ينشروهن 🤣 !  ');
+    });
+  </script>
+</body>
+</html>
